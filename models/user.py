@@ -63,5 +63,6 @@ BALANCE : {self.inventory.balance}
         energy_counter = self.farm.count_energy
         energy_to_pay_price = energy_to_pay * self.WBprice
         energy_remains = energy_counter - energy_to_pay
+self.inventory.balance -= energy_to_pay_price
         print(f"Вы заплатили за электроэнергию {energy_to_pay_price}$")
         self.farm.clear_energy_counter(energy_remains)
