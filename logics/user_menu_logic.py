@@ -30,7 +30,7 @@ def pay(user: User):
         user_select = input("Введите:\nE чтобы оплатить\nN - вернуться назад\n").lower()
         
         if user_select == "e":
-            user.pay_to_energy
+            user.pay_to_energy(user.farm.energy_counter)
 
             return user
 
